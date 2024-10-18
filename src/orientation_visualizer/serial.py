@@ -1,5 +1,4 @@
 import serial
-import numpy as np
 
 
 class SerialController:
@@ -13,27 +12,22 @@ class SerialController:
                 port        = self.SERIAL_PORT,
                 baudrate    = self.SERIAL_BAUDRATE
             )
-            print(f'Serial connection on {self.SERIAL_PORT}@baudrate={self.SERIAL_BAUDRATE} initialized successfully.')
+            print(f'[SerialController] Serial connection on {self.SERIAL_PORT}@baudrate={self.SERIAL_BAUDRATE} initialized successfully.')
         except:
-            print(f'Failed to initialize serial connection on {self.SERIAL_PORT} Please check your connection or try "sudo chmod a+rw {self.SERIAL_PORT}"')
+            print(f'[SerialController] Failed to initialize serial connection on {self.SERIAL_PORT} Please check your connection or try "sudo chmod a+rw {self.SERIAL_PORT}"')
             quit()
 
 
-    def readData(self) -> np.ndarray:
+    def readData(self) -> list[float]:
         serial_data = self.serial.readline().decode().strip().split(',')
         data_num    = len(serial_data)
 
         if data_num == 4: 
             res = []
             for i in range(data_num):
-                res.append([float(serial_data[i])])
+                res.append(float(serial_data[i]))
 
-            return np.array(res)
+            return res
 
         else: 
-            return np.array([
-                [1.0],
-                [0.0],
-                [0.0],
-                [0.0]
-            ])
+            return [0.0, 0.0, 0.0, 1.0]
