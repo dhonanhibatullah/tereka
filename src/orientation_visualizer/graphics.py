@@ -21,6 +21,8 @@ class GraphicsController:
             pb.getQuaternionFromEuler([0, 0, 0])
         )
 
+        print('[GraphicsController] Started!')
+
 
     def setRotation(self, quaternion: list[float]) -> None:
         pb.resetBasePositionAndOrientation(
@@ -30,10 +32,10 @@ class GraphicsController:
         )
 
 
-    def stepGraphics(self) -> None:
+    def step(self) -> None:
         pb.stepSimulation()
-        time.sleep(self.UPDATE_PERIOD)
 
 
     def stop(self) -> None:
         pb.disconnect()
+        print('[GraphicsController] Stopped!')

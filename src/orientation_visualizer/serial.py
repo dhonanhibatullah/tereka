@@ -14,7 +14,7 @@ class SerialController:
             )
             print(f'[SerialController] Serial connection on {self.SERIAL_PORT}@baudrate={self.SERIAL_BAUDRATE} initialized successfully.')
         except:
-            print(f'[SerialController] Failed to initialize serial connection on {self.SERIAL_PORT} Please check your connection or try "sudo chmod a+rw {self.SERIAL_PORT}"')
+            print(f'[SerialController] Failed to initialize serial connection on {self.SERIAL_PORT}. Please check your connection or try "sudo chmod a+rw {self.SERIAL_PORT}".')
             quit()
 
 
@@ -31,3 +31,8 @@ class SerialController:
 
         else: 
             return [0.0, 0.0, 0.0, 1.0]
+        
+    
+    def stop(self) -> None:
+        self.serial.close()
+        print('[SerialController] Stopped!')

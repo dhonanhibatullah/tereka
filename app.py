@@ -19,18 +19,19 @@ def main(args=None) -> None:
     process: callable = None 
 
     if arguments.process:
-        print('[TEREKA App] Starting data_processing...')
+        print('[TEREKA_app] Starting data_processing...')
         process = datapro.main
 
     elif arguments.visual:
-        print('[TEREKA App] Starting orientation_visualizer...')
+        print('[TEREKA_app] Starting orientation_visualizer...')
         process = ornvisual.main
 
     else:
-        print('[TEREKA App] Unknown argument passed. Stopping program...')
+        print('[TEREKA_app] Unknown argument passed. Stopping program...')
         return
 
     process()
+    print('[TEREKA_app] Stopped!')
 
 
 if __name__ == '__main__':
