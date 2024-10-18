@@ -1,6 +1,13 @@
 #include "tereka.h"
 
 
+Preferences     tereka::fs;
+Adafruit_Mahony tereka::filter;
+MPU9250         tereka::imu;
+float           tereka::q_raw[4],
+                tereka::q_filt[4];
+
+
 void tereka::update_q_raw() {
     tereka::q_raw[0] = tereka::imu.getQuaternionW();
     tereka::q_raw[1] = tereka::imu.getQuaternionX();

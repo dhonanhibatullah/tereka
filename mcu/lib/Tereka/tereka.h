@@ -3,7 +3,7 @@
 
 #include <Arduino.h>
 #include <Preferences.h>
-#include <MPU9250.h>
+#include "MPU9250.h"
 #include "Adafruit_AHRS.h"
 
 #define TEREKA_MPU9250_ADDRESS  0x68
@@ -27,11 +27,11 @@
 #define TEREKA_FSKEY_MAGSCLEZ   "9pa9"
 
 namespace tereka {
-    Preferences     fs;
-    Adafruit_Mahony filter;
-    MPU9250         imu;
-    float           q_raw[4],
-                    q_filt[4];
+    extern Preferences      fs;
+    extern Adafruit_Mahony  filter;
+    extern MPU9250          imu;
+    extern float            q_raw[4],
+                            q_filt[4];
 
     void update_q_raw();
     void update_q_filt();
