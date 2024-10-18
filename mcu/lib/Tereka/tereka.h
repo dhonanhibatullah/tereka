@@ -3,7 +3,7 @@
 
 #include <Arduino.h>
 #include <Preferences.h>
-#include "MPU9250.h"
+#include <MPU9250.h>
 #include "Adafruit_AHRS.h"
 
 #define TEREKA_MPU9250_ADDRESS  0x68
