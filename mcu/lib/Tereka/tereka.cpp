@@ -10,9 +10,9 @@ float           tereka::q_raw[4],
 
 void tereka::update_q_raw() {
     tereka::q_raw[0] = tereka::imu.getQuaternionW();
-    tereka::q_raw[1] = tereka::imu.getQuaternionX();
+    tereka::q_raw[3] = tereka::imu.getQuaternionX();
     tereka::q_raw[2] = tereka::imu.getQuaternionY();
-    tereka::q_raw[3] = tereka::imu.getQuaternionZ();
+    tereka::q_raw[1] = tereka::imu.getQuaternionZ();
 }
 
 
@@ -38,9 +38,9 @@ void tereka::update_q_filt() {
     );
     tereka::filter.getQuaternion(
         tereka::q_filt + 0,
-        tereka::q_filt + 1,
+        tereka::q_filt + 3,
         tereka::q_filt + 2,
-        tereka::q_filt + 3
+        tereka::q_filt + 1
     );
 }
 
