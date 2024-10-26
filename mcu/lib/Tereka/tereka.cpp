@@ -10,9 +10,9 @@ float           tereka::q_raw[4],
 
 void tereka::update_q_raw() {
     tereka::q_raw[0] = tereka::imu.getQuaternionW();
-    tereka::q_raw[3] = tereka::imu.getQuaternionX();
-    tereka::q_raw[2] = tereka::imu.getQuaternionY();
-    tereka::q_raw[1] = tereka::imu.getQuaternionZ();
+    tereka::q_raw[3] = tereka::imu.getRoll();
+    tereka::q_raw[2] = tereka::imu.getPitch();
+    tereka::q_raw[1] = tereka::imu.getYaw();
 }
 
 
@@ -50,10 +50,10 @@ void tereka::transmit_data() {
         Serial.print(String(tereka::q_raw[i], 5));
         Serial.print(',');
     }
-    // for(uint8_t i = 0; i < 4; ++i) {
-    //     Serial.print(String(tereka::q_filt[i], 5));
-    //     Serial.print(',');
-    // }
+    for(uint8_t i = 0; i < 4; ++i) {
+        Serial.print(String(tereka::q_filt[i], 5));
+        Serial.print(',');
+    }
     Serial.print('\n');
 }
 
