@@ -50,10 +50,10 @@ void tereka::transmit_data() {
         Serial.print(String(tereka::q_raw[i], 5));
         Serial.print(',');
     }
-    for(uint8_t i = 0; i < 4; ++i) {
-        Serial.print(String(tereka::q_filt[i], 5));
-        Serial.print(',');
-    }
+    // for(uint8_t i = 0; i < 4; ++i) {
+    //     Serial.print(String(tereka::q_filt[i], 5));
+    //     Serial.print(',');
+    // }
     Serial.print('\n');
 }
 

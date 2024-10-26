@@ -1,4 +1,4 @@
-#define __CALIBRATE__
+// #define __CALIBRATE__
 #include "tereka.h"
 
 void setup() {
