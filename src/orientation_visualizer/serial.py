@@ -3,9 +3,10 @@ import serial
 
 class SerialController:
 
-    def __init__(self) -> None:
+    def __init__(self, filter:bool) -> None:
         self.SERIAL_PORT        = '/dev/ttyUSB0'
         self.SERIAL_BAUDRATE    = 115200
+        self.filter_enabled     = filter
 
         try:
             self.serial = serial.Serial(
@@ -22,10 +23,15 @@ class SerialController:
         serial_data = self.serial.readline().decode().strip().split(',')[:-1]
         data_num    = len(serial_data)
 
-        if data_num == 4: 
+        if data_num == 8: 
             res = []
-            for i in range(data_num):
-                res.append(float(serial_data[i]))
+            if self.filter_enabled:
+                for i in range(4, 8):
+                    res.append(float(serial_data[i]))
+
+            else:
+                for i in range(4):
+                    res.append(float(serial_data[i]))
 
             return res
 

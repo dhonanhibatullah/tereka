@@ -11,7 +11,12 @@ def main(args=None) -> None:
         help    = 'Running data_processing'
     )
     parser.add_argument(
-        '--visual',
+        '--visualRaw',
+        action  = 'store_true',
+        help    = 'Running orientation_visualizer'
+    )
+    parser.add_argument(
+        '--visualFilter',
         action  = 'store_true',
         help    = 'Running orientation_visualizer'
     )
@@ -22,9 +27,13 @@ def main(args=None) -> None:
         print('[TEREKA_app] Starting data_processing...')
         process = datapro.main
 
-    elif arguments.visual:
-        print('[TEREKA_app] Starting orientation_visualizer...')
-        process = ornvisual.main
+    elif arguments.visualRaw:
+        print('[TEREKA_app] Starting orientation_visualizer (raw)...')
+        process = ornvisual.main(False)
+
+    elif arguments.visualFilter:
+        print('[TEREKA_app] Starting orientation_visualizer (filter)...')
+        process = ornvisual.main(True)
 
     else:
         print('[TEREKA_app] Unknown argument passed. Stopping program...')
