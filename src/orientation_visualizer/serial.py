@@ -19,7 +19,7 @@ class SerialController:
 
 
     def readData(self) -> list[float]:
-        serial_data = self.serial.readline().decode().strip().split(',')
+        serial_data = self.serial.readline().decode().strip().split(',')[:-1]
         data_num    = len(serial_data)
 
         if data_num == 4: 
