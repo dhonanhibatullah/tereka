@@ -144,10 +144,12 @@ void tereka::setup() {
 
 
 void tereka::loop() {
-    tereka::imu.update();
+    bool is_updated = tereka::imu.update();
     delay(TEREKA_UPDATE_PERIOD_MS);
-    
-    tereka::update_q_raw();
-    tereka::update_q_filt();
-    tereka::transmit_data();
+
+    if(is_updated) {
+        tereka::update_q_raw();
+        tereka::update_q_filt();
+        tereka::transmit_data();
+    }
 }
