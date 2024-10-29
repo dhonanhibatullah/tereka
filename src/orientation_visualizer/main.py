@@ -2,9 +2,9 @@ from .serial import SerialController
 from .graphics import GraphicsController
 
 
-def main(filter:bool):
+def main(args=None):
     print('[orientation_visualizer] Started!')
-    serial_controller   = SerialController(filter)
+    serial_controller   = SerialController()
     graphics_controller = GraphicsController()
 
     try:

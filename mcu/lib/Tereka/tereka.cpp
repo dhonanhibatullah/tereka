@@ -2,7 +2,7 @@
 
 
 Preferences     tereka::fs;
-Adafruit_Mahony tereka::filter;
+// Adafruit_Mahony tereka::filter;
 MPU9250         tereka::imu;
 float           tereka::q_raw[4],
                 tereka::q_filt[4];
@@ -10,39 +10,39 @@ float           tereka::q_raw[4],
 
 void tereka::update_q_raw() {
     tereka::q_raw[0] = tereka::imu.getQuaternionW();
-    tereka::q_raw[3] = tereka::imu.getQuaternionX();
-    tereka::q_raw[2] = tereka::imu.getQuaternionY();
+    tereka::q_raw[2] = tereka::imu.getQuaternionX();
+    tereka::q_raw[3] = -tereka::imu.getQuaternionY();
     tereka::q_raw[1] = tereka::imu.getQuaternionZ();
 }
 
 
-void tereka::update_q_filt() {
-    float   gx, gy, gz,
-            ax, ay, az,
-            mx, my, mz;
+// void tereka::update_q_filt() {
+//     float   gx, gy, gz,
+//             ax, ay, az,
+//             mx, my, mz;
 
-    gx = tereka::imu.getGyroX()*TEREKA_RADS_TO_DPS;
-    gy = tereka::imu.getGyroY()*TEREKA_RADS_TO_DPS;
-    gz = tereka::imu.getGyroZ()*TEREKA_RADS_TO_DPS;
-    ax = tereka::imu.getAccX();
-    ay = tereka::imu.getAccY();
-    az = tereka::imu.getAccZ();
-    mx = tereka::imu.getMagX();
-    my = tereka::imu.getMagY();
-    mz = tereka::imu.getMagZ();
+//     gx = tereka::imu.getGyroX()*TEREKA_RADS_TO_DPS;
+//     gy = tereka::imu.getGyroY()*TEREKA_RADS_TO_DPS;
+//     gz = tereka::imu.getGyroZ()*TEREKA_RADS_TO_DPS;
+//     ax = tereka::imu.getAccX();
+//     ay = tereka::imu.getAccY();
+//     az = tereka::imu.getAccZ();
+//     mx = tereka::imu.getMagX();
+//     my = tereka::imu.getMagY();
+//     mz = tereka::imu.getMagZ();
 
-    tereka::filter.update(
-        gx, gy, gz,
-        ax, ay, az,
-        mx, my, mz
-    );
-    tereka::filter.getQuaternion(
-        tereka::q_filt + 0,
-        tereka::q_filt + 3,
-        tereka::q_filt + 2,
-        tereka::q_filt + 1
-    );
-}
+//     tereka::filter.update(
+//         gx, gy, gz,
+//         ax, ay, az,
+//         mx, my, mz
+//     );
+//     tereka::filter.getQuaternion(
+//         tereka::q_filt + 0,
+//         tereka::q_filt + 3,
+//         tereka::q_filt + 2,
+//         tereka::q_filt + 1
+//     );
+// }
 
 
 void tereka::transmit_data() {
@@ -50,10 +50,10 @@ void tereka::transmit_data() {
         Serial.print(String(tereka::q_raw[i], 5));
         Serial.print(',');
     }
-    for(uint8_t i = 0; i < 4; ++i) {
-        Serial.print(String(tereka::q_filt[i], 5));
-        Serial.print(',');
-    }
+    // for(uint8_t i = 0; i < 4; ++i) {
+    //     Serial.print(String(tereka::q_filt[i], 5));
+    //     Serial.print(',');
+    // }
     Serial.print('\n');
 }
 
@@ -68,18 +68,24 @@ void tereka::calibrate() {
         delay(200);
     }
     delay(3000);
+    Serial.println("Calibrating Accel & Gyro...");
     tereka::imu.calibrateAccelGyro();
+    Serial.println("OK!");
 
     for(uint8_t i = 0; i < 3; ++i) {
         digitalWrite(TEREKA_PIN_BUZZER, HIGH);
         digitalWrite(TEREKA_PIN_LED, HIGH);
+        digitalWrite(2, HIGH);
         delay(200);
         digitalWrite(TEREKA_PIN_BUZZER, LOW);
         digitalWrite(TEREKA_PIN_LED, LOW);
+        digitalWrite(2, LOW);
         delay(200);
     }
     delay(3000);
+    Serial.println("Calibrating Mag...");
     tereka::imu.calibrateMag();
+    Serial.println("OK!");
 
     tereka::fs.putFloat(TEREKA_FSKEY_ACCBIASX, tereka::imu.getAccBiasX());
     tereka::fs.putFloat(TEREKA_FSKEY_ACCBIASY, tereka::imu.getAccBiasY());
@@ -139,7 +145,8 @@ void tereka::setup() {
     pinMode(TEREKA_PIN_LED, OUTPUT);
 
     tereka::imu.setup(TEREKA_MPU9250_ADDRESS);
-    filter.begin(TEREKA_UPDATE_FREQ_HZ);
+    tereka::imu.selectFilter(QuatFilterSel::MAHONY);
+    // filter.begin(TEREKA_UPDATE_FREQ_HZ);
 }
 
 
@@ -149,7 +156,7 @@ void tereka::loop() {
 
     if(is_updated) {
         tereka::update_q_raw();
-        tereka::update_q_filt();
+        // tereka::update_q_filt();
         tereka::transmit_data();
     }
 }

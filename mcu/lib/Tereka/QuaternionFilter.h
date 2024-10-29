@@ -16,8 +16,8 @@ class QuaternionFilter {
     float zeta = sqrt(3.0f / 4.0f) * GyroMeasDrift;  // compute zeta, the other free parameter in the Madgwick scheme usually set to a small or zero value
 
     // for mahony
-    float Kp = 30.0;
-    float Ki = 0.0;
+    float Kp = 15.0;
+    float Ki = 0.05;
 
     QuatFilterSel filter_sel{QuatFilterSel::MADGWICK};
     double deltaT{0.};
