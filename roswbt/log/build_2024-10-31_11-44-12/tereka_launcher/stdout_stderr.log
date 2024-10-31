@@ -1,0 +1,46 @@
+running egg_info
+creating ../../build/tereka_launcher/tereka_launcher.egg-info
+writing ../../build/tereka_launcher/tereka_launcher.egg-info/PKG-INFO
+writing dependency_links to ../../build/tereka_launcher/tereka_launcher.egg-info/dependency_links.txt
+writing requirements to ../../build/tereka_launcher/tereka_launcher.egg-info/requires.txt
+writing top-level names to ../../build/tereka_launcher/tereka_launcher.egg-info/top_level.txt
+writing manifest file '../../build/tereka_launcher/tereka_launcher.egg-info/SOURCES.txt'
+reading manifest file '../../build/tereka_launcher/tereka_launcher.egg-info/SOURCES.txt'
+writing manifest file '../../build/tereka_launcher/tereka_launcher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build
+creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib
+creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher
+copying tereka_launcher/truck.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher
+copying tereka_launcher/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher
+creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/modules
+copying tereka_launcher/modules/truck_driver.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/modules
+copying tereka_launcher/modules/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/modules
+running install
+running install_lib
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/modules
+copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/modules/truck_driver.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/modules
+copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/modules/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/modules
+copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/truck.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher
+copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher
+byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/modules/truck_driver.py to truck_driver.cpython-312.pyc
+byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/modules/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/truck.py to truck.cpython-312.pyc
+byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/ament_index
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/ament_index/resource_index
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/ament_index/resource_index/packages
+copying resource/tereka_launcher -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/ament_index/resource_index/packages
+copying package.xml -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher
+copying launch/truck_visual.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/worlds
+copying worlds/plain_board.wbt -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/worlds
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/resource
+copying resource/truck.urdf -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/resource
+running install_egg_info
+Copying ../../build/tereka_launcher/tereka_launcher.egg-info to /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/install.log'

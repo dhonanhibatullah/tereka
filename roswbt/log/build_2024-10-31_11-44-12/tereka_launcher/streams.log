@@ -1,0 +1,48 @@
+[2.630s] Invoking command in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_launcher': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tereka_launcher build --build-base /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build install --record /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/install.log --single-version-externally-managed install_data
+[3.054s] running egg_info
+[3.054s] creating ../../build/tereka_launcher/tereka_launcher.egg-info
+[3.085s] writing ../../build/tereka_launcher/tereka_launcher.egg-info/PKG-INFO
+[3.085s] writing dependency_links to ../../build/tereka_launcher/tereka_launcher.egg-info/dependency_links.txt
+[3.086s] writing requirements to ../../build/tereka_launcher/tereka_launcher.egg-info/requires.txt
+[3.086s] writing top-level names to ../../build/tereka_launcher/tereka_launcher.egg-info/top_level.txt
+[3.086s] writing manifest file '../../build/tereka_launcher/tereka_launcher.egg-info/SOURCES.txt'
+[3.153s] reading manifest file '../../build/tereka_launcher/tereka_launcher.egg-info/SOURCES.txt'
+[3.154s] writing manifest file '../../build/tereka_launcher/tereka_launcher.egg-info/SOURCES.txt'
+[3.154s] running build
+[3.155s] running build_py
+[3.155s] creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build
+[3.155s] creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib
+[3.155s] creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher
+[3.155s] copying tereka_launcher/truck.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher
+[3.155s] copying tereka_launcher/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher
+[3.155s] creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/modules
+[3.156s] copying tereka_launcher/modules/truck_driver.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/modules
+[3.157s] copying tereka_launcher/modules/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/modules
+[3.157s] running install
+[3.170s] running install_lib
+[3.200s] creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher
+[3.201s] creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/modules
+[3.201s] copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/modules/truck_driver.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/modules
+[3.201s] copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/modules/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/modules
+[3.201s] copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/truck.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher
+[3.201s] copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build/lib/tereka_launcher/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher
+[3.202s] byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/modules/truck_driver.py to truck_driver.cpython-312.pyc
+[3.203s] byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/modules/__init__.py to __init__.cpython-312.pyc
+[3.203s] byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/truck.py to truck.cpython-312.pyc
+[3.204s] byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher/__init__.py to __init__.cpython-312.pyc
+[3.204s] running install_data
+[3.204s] creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/ament_index
+[3.204s] creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/ament_index/resource_index
+[3.205s] creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/ament_index/resource_index/packages
+[3.205s] copying resource/tereka_launcher -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/ament_index/resource_index/packages
+[3.205s] copying package.xml -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher
+[3.205s] copying launch/truck_visual.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher
+[3.206s] creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/worlds
+[3.206s] copying worlds/plain_board.wbt -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/worlds
+[3.207s] creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/resource
+[3.207s] copying resource/truck.urdf -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/resource
+[3.207s] running install_egg_info
+[3.244s] Copying ../../build/tereka_launcher/tereka_launcher.egg-info to /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher-0.0.0-py3.12.egg-info
+[3.245s] running install_scripts
+[3.453s] writing list of installed files to '/home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/install.log'
+[4.264s] Invoked command in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_launcher' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tereka_launcher build --build-base /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build install --record /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/install.log --single-version-externally-managed install_data

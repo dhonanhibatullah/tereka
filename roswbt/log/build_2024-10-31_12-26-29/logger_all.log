@@ -1,0 +1,177 @@
+[0.124s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.124s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71ee01672a80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71ee01624920>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71ee01624920>>, mixin_verb=('build',))
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.162s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dhonan/Workspaces/tereka/roswbt'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_launcher) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_launcher) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_launcher) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_launcher) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_launcher) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_launcher) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_launcher) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_launcher) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_launcher) by extension 'ros'
+[0.196s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tereka_launcher' with type 'ros.ament_python' and name 'tereka_launcher'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_serial) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_serial) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_serial) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_serial) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_serial) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_serial) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_serial) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_serial) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/tereka_serial) by extension 'ros'
+[0.197s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tereka_serial' with type 'ros.ament_python' and name 'tereka_serial'
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.219s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/dhonan/Workspaces/tereka/roswbt/install
+[0.221s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 319 installed packages in /opt/ros/rolling
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tereka_launcher' build argument 'cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tereka_launcher' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tereka_launcher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tereka_launcher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tereka_launcher' build argument 'cmake_clean_first' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tereka_launcher' build argument 'cmake_force_configure' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tereka_launcher' build argument 'ament_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tereka_launcher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tereka_launcher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.274s] DEBUG:colcon.colcon_core.verb:Building package 'tereka_launcher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher', 'merge_install': False, 'path': '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_launcher', 'symlink_install': False, 'test_result_base': None}
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tereka_serial' build argument 'cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tereka_serial' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tereka_serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tereka_serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tereka_serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tereka_serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tereka_serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tereka_serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tereka_serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'tereka_serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial', 'merge_install': False, 'path': '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_serial', 'symlink_install': False, 'test_result_base': None}
+[0.275s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.276s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.277s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_launcher' with build type 'ament_python'
+[0.277s] Level 1:colcon.colcon_core.shell:create_environment_hook('tereka_launcher', 'ament_prefix_path')
+[0.279s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/hook/ament_prefix_path.ps1'
+[0.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/hook/ament_prefix_path.dsv'
+[0.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/hook/ament_prefix_path.sh'
+[0.281s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.281s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.286s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_serial' with build type 'ament_python'
+[0.286s] Level 1:colcon.colcon_core.shell:create_environment_hook('tereka_serial', 'ament_prefix_path')
+[0.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/hook/ament_prefix_path.ps1'
+[0.287s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/hook/ament_prefix_path.dsv'
+[0.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/hook/ament_prefix_path.sh'
+[0.288s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.288s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.588s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_launcher'
+[0.589s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.589s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.911s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_serial'
+[0.912s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.912s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_launcher': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tereka_launcher build --build-base /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build install --record /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/install.log --single-version-externally-managed install_data
+[1.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_serial': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tereka_serial build --build-base /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build install --record /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/install.log --single-version-externally-managed install_data
+[2.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_launcher' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tereka_launcher build --build-base /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build install --record /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/install.log --single-version-externally-managed install_data
+[2.753s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher' for CMake module files
+[2.754s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher' for CMake config files
+[2.755s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib'
+[2.756s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/bin'
+[2.756s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/pkgconfig/tereka_launcher.pc'
+[2.756s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages'
+[2.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('tereka_launcher', 'pythonpath')
+[2.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/hook/pythonpath.ps1'
+[2.757s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/hook/pythonpath.dsv'
+[2.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/hook/pythonpath.sh'
+[2.759s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/bin'
+[2.759s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tereka_launcher)
+[2.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/package.ps1'
+[2.761s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/package.dsv'
+[2.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/package.sh'
+[2.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/package.bash'
+[2.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/package.zsh'
+[2.764s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/colcon-core/packages/tereka_launcher)
+[2.766s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial' for CMake module files
+[2.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_serial' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tereka_serial build --build-base /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build install --record /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/install.log --single-version-externally-managed install_data
+[2.767s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial' for CMake config files
+[2.768s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib'
+[2.768s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/bin'
+[2.768s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/pkgconfig/tereka_serial.pc'
+[2.769s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages'
+[2.769s] Level 1:colcon.colcon_core.shell:create_environment_hook('tereka_serial', 'pythonpath')
+[2.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/hook/pythonpath.ps1'
+[2.770s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/hook/pythonpath.dsv'
+[2.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/hook/pythonpath.sh'
+[2.772s] Level 1:colcon.colcon_core.environment:checking '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/bin'
+[2.772s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tereka_serial)
+[2.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/package.ps1'
+[2.773s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/package.dsv'
+[2.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/package.sh'
+[2.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/package.bash'
+[2.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial/package.zsh'
+[2.775s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/colcon-core/packages/tereka_serial)
+[2.775s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.776s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.777s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.777s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.783s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.783s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.783s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.801s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.802s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dhonan/Workspaces/tereka/roswbt/install/local_setup.ps1'
+[2.803s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dhonan/Workspaces/tereka/roswbt/install/_local_setup_util_ps1.py'
+[2.804s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dhonan/Workspaces/tereka/roswbt/install/setup.ps1'
+[2.805s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dhonan/Workspaces/tereka/roswbt/install/local_setup.sh'
+[2.806s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dhonan/Workspaces/tereka/roswbt/install/_local_setup_util_sh.py'
+[2.807s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dhonan/Workspaces/tereka/roswbt/install/setup.sh'
+[2.809s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dhonan/Workspaces/tereka/roswbt/install/local_setup.bash'
+[2.811s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dhonan/Workspaces/tereka/roswbt/install/setup.bash'
+[2.813s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dhonan/Workspaces/tereka/roswbt/install/local_setup.zsh'
+[2.813s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dhonan/Workspaces/tereka/roswbt/install/setup.zsh'

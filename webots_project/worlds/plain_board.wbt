@@ -1,0 +1,31 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "../protos/TruckSimple.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.20849051891160128 -0.05873452786069222 0.9762591657756422 3.6783852667091206
+  position 57.949442586189946 41.567356944638895 37.33696227062425
+}
+TexturedBackground {
+  texture "factory"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 30 30
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+TruckSimple {
+  translation 0 0 10
+  name "truck"
+  controller "<extern>"
+  supervisor FALSE
+}

@@ -1,0 +1,43 @@
+running egg_info
+creating ../../build/tereka_serial/tereka_serial.egg-info
+writing ../../build/tereka_serial/tereka_serial.egg-info/PKG-INFO
+writing dependency_links to ../../build/tereka_serial/tereka_serial.egg-info/dependency_links.txt
+writing entry points to ../../build/tereka_serial/tereka_serial.egg-info/entry_points.txt
+writing requirements to ../../build/tereka_serial/tereka_serial.egg-info/requires.txt
+writing top-level names to ../../build/tereka_serial/tereka_serial.egg-info/top_level.txt
+writing manifest file '../../build/tereka_serial/tereka_serial.egg-info/SOURCES.txt'
+reading manifest file '../../build/tereka_serial/tereka_serial.egg-info/SOURCES.txt'
+writing manifest file '../../build/tereka_serial/tereka_serial.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build
+creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib
+creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial
+copying tereka_serial/main.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial
+copying tereka_serial/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial
+creating /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial/modules
+copying tereka_serial/modules/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial/modules
+copying tereka_serial/modules/serial_node.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial/modules
+running install
+running install_lib
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial/modules
+copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial/modules/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial/modules
+copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial/modules/serial_node.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial/modules
+copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial/main.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial
+copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial/__init__.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial
+byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial/modules/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial/modules/serial_node.py to serial_node.cpython-312.pyc
+byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial/main.py to main.cpython-312.pyc
+byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/ament_index
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/ament_index/resource_index
+creating /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/ament_index/resource_index/packages
+copying resource/tereka_serial -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/ament_index/resource_index/packages
+copying package.xml -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/share/tereka_serial
+running install_egg_info
+Copying ../../build/tereka_serial/tereka_serial.egg-info to /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial-0.0.0-py3.12.egg-info
+running install_scripts
+Installing main script to /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/tereka_serial
+writing list of installed files to '/home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/install.log'

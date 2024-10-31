@@ -1,0 +1,24 @@
+[1.575s] Invoking command in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_serial': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tereka_serial build --build-base /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build install --record /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/install.log --single-version-externally-managed install_data
+[1.987s] running egg_info
+[2.015s] writing ../../build/tereka_serial/tereka_serial.egg-info/PKG-INFO
+[2.015s] writing dependency_links to ../../build/tereka_serial/tereka_serial.egg-info/dependency_links.txt
+[2.015s] writing entry points to ../../build/tereka_serial/tereka_serial.egg-info/entry_points.txt
+[2.016s] writing requirements to ../../build/tereka_serial/tereka_serial.egg-info/requires.txt
+[2.016s] writing top-level names to ../../build/tereka_serial/tereka_serial.egg-info/top_level.txt
+[2.079s] reading manifest file '../../build/tereka_serial/tereka_serial.egg-info/SOURCES.txt'
+[2.080s] writing manifest file '../../build/tereka_serial/tereka_serial.egg-info/SOURCES.txt'
+[2.080s] running build
+[2.080s] running build_py
+[2.081s] copying tereka_serial/main.py -> /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial
+[2.081s] running install
+[2.094s] running install_lib
+[2.126s] copying /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build/lib/tereka_serial/main.py -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial
+[2.127s] byte-compiling /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial/main.py to main.cpython-312.pyc
+[2.128s] running install_data
+[2.128s] running install_egg_info
+[2.165s] removing '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial-0.0.0-py3.12.egg-info' (and everything under it)
+[2.165s] Copying ../../build/tereka_serial/tereka_serial.egg-info to /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages/tereka_serial-0.0.0-py3.12.egg-info
+[2.168s] running install_scripts
+[2.360s] Installing main script to /home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/tereka_serial
+[2.361s] writing list of installed files to '/home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/install.log'
+[2.398s] Invoked command in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_serial' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhonan/Workspaces/tereka/roswbt/install/tereka_serial/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tereka_serial build --build-base /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/build install --record /home/dhonan/Workspaces/tereka/roswbt/build/tereka_serial/install.log --single-version-externally-managed install_data

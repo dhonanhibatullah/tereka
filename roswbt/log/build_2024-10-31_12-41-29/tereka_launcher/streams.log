@@ -1,0 +1,22 @@
+[1.513s] Invoking command in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_launcher': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tereka_launcher build --build-base /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build install --record /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/install.log --single-version-externally-managed install_data
+[1.907s] running egg_info
+[1.939s] writing ../../build/tereka_launcher/tereka_launcher.egg-info/PKG-INFO
+[1.939s] writing dependency_links to ../../build/tereka_launcher/tereka_launcher.egg-info/dependency_links.txt
+[1.940s] writing entry points to ../../build/tereka_launcher/tereka_launcher.egg-info/entry_points.txt
+[1.940s] writing requirements to ../../build/tereka_launcher/tereka_launcher.egg-info/requires.txt
+[1.940s] writing top-level names to ../../build/tereka_launcher/tereka_launcher.egg-info/top_level.txt
+[2.001s] reading manifest file '../../build/tereka_launcher/tereka_launcher.egg-info/SOURCES.txt'
+[2.002s] writing manifest file '../../build/tereka_launcher/tereka_launcher.egg-info/SOURCES.txt'
+[2.002s] running build
+[2.002s] running build_py
+[2.003s] running install
+[2.012s] running install_lib
+[2.056s] running install_data
+[2.057s] copying worlds/TruckSimple.proto -> /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/share/tereka_launcher/worlds
+[2.057s] running install_egg_info
+[2.090s] removing '/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher-0.0.0-py3.12.egg-info' (and everything under it)
+[2.090s] Copying ../../build/tereka_launcher/tereka_launcher.egg-info to /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages/tereka_launcher-0.0.0-py3.12.egg-info
+[2.092s] running install_scripts
+[2.303s] Installing truck script to /home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/tereka_launcher
+[2.304s] writing list of installed files to '/home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/install.log'
+[2.351s] Invoked command in '/home/dhonan/Workspaces/tereka/roswbt/src/tereka_launcher' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhonan/Workspaces/tereka/roswbt/install/tereka_launcher/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tereka_launcher build --build-base /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/build install --record /home/dhonan/Workspaces/tereka/roswbt/build/tereka_launcher/install.log --single-version-externally-managed install_data

@@ -1,0 +1,2 @@
+[console_scripts]
+main = tereka_serial.main:main

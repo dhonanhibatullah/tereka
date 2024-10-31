@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<robot name="truck">
+    <webots>
+        <plugin type="tereka_launcher.truck.TruckDriver">
+            <robotName>truck</robotName>
+        </plugin>
+    </webots>
+</robot>
