@@ -1,2 +1,0 @@
-tereka_launcher
-tereka_launcher/modules

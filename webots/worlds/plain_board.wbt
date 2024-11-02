@@ -1,0 +1,39 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "../protos/TruckSimple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/tables/protos/Table.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.22349162745304504 -0.07396283796314798 0.9718955659219907 3.76398759483494
+  position 127.40867620476958 101.95339384654244 86.06224957551296
+}
+TexturedBackground {
+  texture "factory"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 60 60
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+  wallHeight 1
+}
+DEF MY_TRUCK TruckSimple {
+  translation 15.4454 -8.19699 17.4886
+  rotation 0 0 -1 -2.617985307179586
+  name "truck"
+  controller "truck_crash_demo"
+}
+Table {
+  translation 0 -11 0
+  size 55 30 17
+  feetSize 2 2
+  frameThickness 1
+}

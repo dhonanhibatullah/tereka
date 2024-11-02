@@ -1,2 +1,0 @@
-[console_scripts]
-truck = tereka_launcher.truck:main
